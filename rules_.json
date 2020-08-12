@@ -1,3 +1,4 @@
 [
-    "^/hosted/(.*) /egs_sgu/rest [NC]"
+    "^/hosted/(.*) /rule1 [NC]",
+    "^/hosted/rest/services/EGS_SGU(.*) /hostmatch [H=egs\.services.*]"
 ]

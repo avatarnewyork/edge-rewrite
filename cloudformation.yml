@@ -1,0 +1,54 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: This CloudFormation template for deploying edge re-write lambda function. 
+
+Parameters:
+ S3SourceBucket:
+   Type: String
+   Description: S3 bucket containing lambda code zip file
+   Default: 'aws-landing-zone-s3-shared-sse-469685743753-ca-central-1'
+ LambdaCodeZipFile:
+   Type: 'String'
+   Description: 'Name of the zip file of the lambda code'
+   Default: 'edge-rewrite-master.zip'
+
+Resources:
+  edgeRewriteRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: edge-rewrite-role
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+                - edgelambda.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Policies:
+        - PolicyName: edgeRewritePolicy
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+                Resource: '*'
+  EdgeRewriteFunction:
+    Type: AWS::Lambda::Function
+    DependsOn: edgeRewriteRole
+    Properties:
+      Code:
+        S3Bucket: !Ref S3SourceBucket
+        S3Key: !Ref LambdaCodeZipFile
+      FunctionName : 'Edge-Rewrite'
+      Handler: 'handler.handler'
+      Role:
+        Fn::GetAtt: 
+          - 'edgeRewriteRole' 
+          - 'Arn'
+      Runtime: nodejs12.x
+      Timeout: 900 
+  

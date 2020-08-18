@@ -29,5 +29,6 @@
     "^/hosted/rest/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_en/MapServer(.*) https://maps-stage.services.geo.ca/egs_sgu/rest/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_en/MapServer$1",
     "^/hosted/rest/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_fr/MapServer(.*) https://maps-stage.services.geo.ca/egs_sgu/rest/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_fr/MapServer$1",
     "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_en/MapServer/WMSServer(.*) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_en/MapServer/WMSServer$1",
-    "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_fr/MapServer/WMSServer(.*) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_fr/MapServer/WMSServer$1 [R]"
+    "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_fr/MapServer/WMSServer(.*) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_fr/MapServer/WMSServer$1 [R]",
+    "^/oldpath http://maps-stage.services.geo.ca [R=302,NC]"
 ]

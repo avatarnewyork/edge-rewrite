@@ -1,7 +1,4 @@
 [
-    "^/hosted/(.*) /rule1/$1 [NC]",
-    "^/hosted/rest/services/EGS_SGU(.*) /hostmatch [H=egs\\.services.*]",
-	
     "^/hosted/rest/services/EGS_SGU/EGS_Flood_Product_Active_en/MapServer(.*) https://maps-stage.services.geo.ca/egs_sgu/rest/services/Flood_Inondation/EGS_Flood_Product_Active_en/MapServer$1",
     "^/hosted/rest/services/EGS_SGU/EGS_Flood_Product_Active_fr/MapServer(.*) https://maps-stage.services.geo.ca/egs_sgu/rest/services/Flood_Inondation/EGS_Flood_Product_Active_fr/MapServer$1",
     "^/hosted/services/EGS_SGU/EGS_Flood_Product_Active_en/MapServer/WMSServer(.*) https://maps-stage.services.geo.ca/egs_sgu/services/Flood_Inondation/EGS_Flood_Product_Active_en/MapServer/WMSServer$1",

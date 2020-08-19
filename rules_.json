@@ -1,6 +1,6 @@
 [
-    "^/hosted/rest/services/EGS_SGU/(.*) https://maps-stage.services.geo.ca/egs_sgu/rest/services$1",
-    "^/hosted/services/EGS_SGU/(.*) https://maps-stage.services.geo.ca/egs_sgu/services/$1",
-    "^/hosted/rest/services/Hosted/(.*) https://maps-stage.services.geo.ca/hosted/rest/services/Hosted/$1",
+    "^https://maps-stage.egs-redir.services.geo.ca/hosted/rest/services/EGS_SGU/(.*) https://maps-stage.services.geo.ca/egs_sgu/rest/services$1",
+    "^https://maps-stage.egs-redir.services.geo.ca/hosted/services/EGS_SGU/(.*) https://maps-stage.services.geo.ca/egs_sgu/services/$1",
+    "^https://maps-stage.egs-redir.services.geo.ca/hosted/rest/services/Hosted/(.*) https://maps-stage.services.geo.ca/hosted/rest/services/Hosted/$1",
     "^/oldpath http://maps-stage.services.geo.ca [R=302,NC]"
 ]

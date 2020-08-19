@@ -31,5 +31,5 @@
     "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_en/MapServer/WMSServer(.*) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_en/MapServer/WMSServer$1 [NC]",
     "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_fr/MapServer/WMSServer(.*) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_fr/MapServer/WMSServer$1 [NC]",
     "^/oldpath http://maps-stage.services.geo.ca [R=302,NC]",
-    "^/oldpath-second /newpath-second"
+    "^/oldpath-second$ /newpath-second"
 ]

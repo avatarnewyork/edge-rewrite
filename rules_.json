@@ -1,5 +1,5 @@
 [
-    "^/hosted/rest/services/EGS_SGU(.*)$ https://maps-stage.services.geo.ca/egs_sgu/rest/services/$1 [R]",
+    "^/hosted/rest/services/EGS_SGU(.*)$ https://maps-stage.services.geo.ca/egs_sgu/rest/services/$1 [R,NC]",
     "^/hosted/services/EGS_SGU(.*)$ https://maps-stage.services.geo.ca/egs_sgu/services/$1 [NC]",
     "^/hosted/rest/services/Hosted(.*)$ https://maps-stage.services.geo.ca/hosted/rest/services/Hosted/$1 [NC]",
     "^/oldpath http://maps-stage.services.geo.ca [R=302,NC]"

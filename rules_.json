@@ -30,5 +30,5 @@
     "^/hosted/rest/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_fr/(.+) https://maps-stage.services.geo.ca/egs_sgu/rest/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_fr/$1 [R]",
     "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_en/(.+) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_en/$1 [R]",
     "^/hosted/services/EGS_SGU/EGS_AcquisitionPlan_Collection_Active_fr/(.+) https://maps-stage.services.geo.ca/egs_sgu/services/Acquisition_Plan/EGS_AcquisitionPlan_Collection_Active_fr/$1 [R]",
-    "^/alb https://arcgis-bl-3-dev-pub-alb-1289894821.ca-central-1.elb.amazonaws.com/portal/home [R,NC]"
+    "^/alb https://arcgis-bl-3-dev-pub-alb-1289894821.ca-central-1.elb.amazonaws.com/portal/home [NC]"
 ]
